@@ -294,7 +294,7 @@ b {
 }
 
 .hero-banner p {
-  font-size: 13px;
+  font-size: 18px;
   line-height: 1.4;
   color: var(--muted);
 }
@@ -302,7 +302,7 @@ b {
 .hero-banner .hero-quote {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 28px;
   letter-spacing: -0.01em;
   color: var(--text);
 }
@@ -310,17 +310,22 @@ b {
 .hero-body {
   display: flex;
   align-items: stretch;
-  gap: 16px;
+  gap: 12px;
 }
 
 .hero-photo {
   object-fit: cover;
   object-position: center top;
   flex-shrink: 0;
-  align-self: stretch;
-  width: 96px;
-  height: auto;
+  align-self: flex-start;
+  width: 126px;
+  height: 126px;
   border-color: var(--border-strong);
+}
+
+.hero-actions .btn {
+  padding: 8px 7px;
+  font-size: 12px;
 }
 
 .hero-info {
@@ -355,7 +360,7 @@ b {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   margin-top: 10px;
 }
 
@@ -378,8 +383,12 @@ b {
     padding: 24px;
   }
 
+  .hero-banner p {
+    font-size: 22px;
+  }
+
   .hero-banner .hero-quote {
-    font-size: 18px;
+    font-size: 36px;
   }
 
   .hero-body {
@@ -387,6 +396,16 @@ b {
   }
 
   .hero-photo {
-    width: 120px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero-actions {
+    gap: 8px;
+  }
+
+  .hero-actions .btn {
+    padding: 8px 14px;
+    font-size: 13px;
   }
 }
