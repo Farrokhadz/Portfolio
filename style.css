@@ -268,10 +268,26 @@ b {
 }
 
 .search-badge {
-  padding: 4px 10px;
+  gap: 6px;
+  padding: 6px 12px;
   border-radius: var(--radius-sm);
   background: var(--bg);
   border-color: var(--border-strong);
+  color: var(--muted);
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.search-badge svg {
+  width: 13px;
+  height: 13px;
+}
+
+.search-badge:hover {
+  background: var(--border-strong);
+  border-color: var(--subtle);
+  color: var(--text);
 }
 
 .hero-banner {
@@ -474,4 +490,21 @@ b {
   50% {
     opacity: 0;
   }
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.about-list li::marker {
+  color: var(--text);
+}
+
+.about-list strong {
+  border-bottom: 1px solid var(--border-strong);
 }
