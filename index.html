@@ -48,6 +48,9 @@
     <main class="container">
       <section class="hero">
         <div class="hero-banner">
+          <div class="hero-code" aria-hidden="true">
+            <span id="typing"></span><span class="cursor"></span>
+          </div>
           <p>Less talk..</p>
           <p class="hero-quote">More commits..</p>
         </div>
@@ -70,5 +73,20 @@
       </section>
       <div class="hatch"></div>
     </main>
+    <script>
+      const text = 'const developer = "Farrokh";';
+      const element = document.getElementById("typing");
+      let index = 0;
+
+      function type() {
+        if (index < text.length) {
+          element.textContent += text[index];
+          index++;
+          setTimeout(type, 85);
+        }
+      }
+
+      type();
+    </script>
   </body>
 </html>
