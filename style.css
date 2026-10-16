@@ -492,13 +492,27 @@ b {
   }
 }
 
+#about {
+  padding: 48px 18px;
+}
+
+.about-title {
+  margin: 0 -18px;
+  padding: 0 18px 24px;
+  border-bottom: 1px solid var(--border);
+  font-size: 32px;
+}
+
 .about-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  margin-top: 20px;
-  padding-left: 20px;
+  gap: 20px;
+  margin-top: 28px;
+  padding-left: 22px;
   list-style: disc;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.7;
 }
 
 .about-list li::marker {
@@ -506,5 +520,24 @@ b {
 }
 
 .about-list strong {
+  color: inherit;
   border-bottom: 1px solid var(--border-strong);
+}
+
+@media (min-width: 768px) {
+  #about {
+    padding: 56px 24px;
+  }
+
+  .about-title {
+    margin: 0 -24px;
+    padding: 0 24px 28px;
+    font-size: 36px;
+  }
+
+  .about-list {
+    gap: 22px;
+    margin-top: 32px;
+    font-size: 18px;
+  }
 }
