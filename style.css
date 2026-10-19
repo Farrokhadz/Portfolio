@@ -572,11 +572,11 @@ b {
 .chip {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
+  gap: 10px;
+  padding: 6px 16px 6px 6px;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
+  border-radius: 999px;
   color: var(--text);
   font-size: 14px;
   font-weight: 500;
@@ -589,9 +589,18 @@ b {
   border-color: var(--border-strong);
 }
 
-.chip svg {
+.chip-icon {
+  display: grid;
+  place-items: center;
   flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+}
+
+.chip-icon svg {
   width: 16px;
   height: 16px;
-  color: var(--muted);
 }
