@@ -1069,3 +1069,7 @@ img.project-thumb {
   display: block;
   width: 100%;
 }
+
+.footer {
+  border-bottom: 1px solid var(--border);
+}
