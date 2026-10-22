@@ -1073,3 +1073,69 @@ img.project-thumb {
 .footer {
   border-bottom: 1px solid var(--border);
 }
+
+#resume {
+  padding: 24px 18px;
+}
+
+.resume-intro {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.resume-file {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.resume-file-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text);
+}
+
+.resume-file-name svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: var(--muted);
+}
+
+.resume-file-name span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.resume-file-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.resume-preview {
+  display: block;
+  width: 100%;
+  height: 640px;
+  margin-top: 16px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+@media (min-width: 768px) {
+  #resume {
+    padding: 28px 24px;
+  }
+
+  .resume-preview {
+    height: 860px;
+  }
+}
