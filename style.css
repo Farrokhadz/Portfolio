@@ -1064,3 +1064,8 @@ textarea.field {
     padding: 24px;
   }
 }
+
+img.project-thumb {
+  display: block;
+  width: 100%;
+}
