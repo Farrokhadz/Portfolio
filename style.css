@@ -185,7 +185,7 @@ b {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #fff;
+  background: rgb(58, 232, 58);
 }
 
 .dot.hollow {
@@ -276,7 +276,10 @@ b {
   color: var(--muted);
   font-size: 12px;
   cursor: pointer;
-  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    color 0.15s;
 }
 
 .search-badge svg {
@@ -302,7 +305,9 @@ b {
   border-bottom: 1px solid var(--border);
   position: relative;
   overflow: hidden;
-  background: repeating-linear-gradient(135deg, transparent 0 7px, #1b1b1b 7px 8px), var(--surface);
+  background:
+    repeating-linear-gradient(135deg, transparent 0 7px, #1b1b1b 7px 8px),
+    var(--surface);
 }
 
 .hero-banner p {
@@ -581,7 +586,9 @@ b {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
-  transition: background 0.15s, border-color 0.15s;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
 }
 
 .chip:hover {
