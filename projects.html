@@ -32,7 +32,7 @@
         </a>
         <div class="topbar-actions">
           <a href="resume.html" class="topbar-link">Resume</a>
-          <span class="tag search-badge">
+          <button type="button" class="tag search-badge" id="search-btn">
             <svg
               width="12"
               height="12"
@@ -48,7 +48,8 @@
               <path d="M21 21l-4.35-4.35" />
             </svg>
             Ctrl + K
-          </span>
+          </button>
+          <button type="button" class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" /></svg></button>
         </div>
       </div>
     </header>
@@ -62,7 +63,7 @@
           <h1 class="section-title">All Projects</h1>
         </div>
         <div class="projects-grid">
-          <article class="card project-card">
+          <article id="albumscope" class="card project-card">
             <img
               class="thumb project-thumb"
               src="images/AlbumScope.webp"
@@ -125,7 +126,7 @@
               >
             </div>
           </article>
-          <article class="card project-card">
+          <article id="csa-cta" class="card project-card">
             <img
               class="thumb project-thumb"
               src="images/Csa.webp"
@@ -389,5 +390,6 @@
         empty.hidden = visible > 0;
       });
     </script>
+    <script src="nav.js" defer></script>
   </body>
 </html>
