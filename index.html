@@ -675,6 +675,7 @@
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
         submitBtn.disabled = true;
+        note.className = "form-note";
         note.textContent = "Sending...";
 
         try {
@@ -686,7 +687,9 @@
 
           if (response.ok) {
             form.reset();
-            note.textContent = "Thanks! Your message was sent.";
+            note.className = "form-note is-success";
+            note.innerHTML =
+              '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><polyline points="8 12.5 11 15.5 16 9.5" /></svg><span>Thanks! Your message was sent.</span>';
           } else {
             note.textContent = "Something went wrong. Please try again or email me directly.";
           }

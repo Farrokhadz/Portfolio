@@ -1159,3 +1159,18 @@ img.project-thumb {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+.form-note.is-success {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #22c55e;
+}
+
+.form-note.is-success svg {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
