@@ -12,12 +12,21 @@
     <link rel="apple-touch-icon" href="images/favicon.png" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Farokhadz | Frontend Developer" />
-    <meta property="og:description" content="Farokhadz is a Frontend Developer and Computer Science student building clean, fast and responsive web interfaces." />
+    <meta
+      property="og:description"
+      content="Farokhadz is a Frontend Developer and Computer Science student building clean, fast and responsive web interfaces."
+    />
     <meta property="og:url" content="https://www.farokhadz.ir/" />
-    <meta property="og:image" content="https://www.farokhadz.ir/images/og-image.png" />
+    <meta
+      property="og:image"
+      content="https://www.farokhadz.ir/images/og-image.png"
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta name="twitter:image" content="https://www.farokhadz.ir/images/og-image.png" />
+    <meta
+      name="twitter:image"
+      content="https://www.farokhadz.ir/images/og-image.png"
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,7 +61,27 @@
             </svg>
             Ctrl + K
           </button>
-          <button type="button" class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" /></svg></button>
+          <button
+            type="button"
+            class="menu-btn"
+            id="menu-btn"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -89,12 +118,20 @@
         <ul class="about-list">
           <li>
             I&rsquo;m a <strong>front-end developer</strong> who cares about how
-            things look, feel, and behave. <strong>React</strong> is my main
-            focus: I use it to build clean, fast, accessible interfaces.
+            things look, feel, and behave.
+          </li>
+          <li>
+            <strong>React</strong> is my main focus: I use it to build clean,
+            fast, accessible interfaces.
+          </li>
+          <li>
             I&rsquo;m a <strong>problem solver</strong> at heart, and I enjoy
             breaking down tricky logic and performance issues until they have
-            simple solutions. I <strong>learn by shipping</strong>, so every new
-            tool goes straight into a real project.
+            simple solutions.
+          </li>
+          <li>
+            I <strong>learn by shipping</strong>, so every new tool goes
+            straight into a real project.
           </li>
           <li>
             I&rsquo;m a Computer Science student, and I&rsquo;m currently
@@ -538,8 +575,19 @@
             action="https://formspree.io/f/xbggrpqe"
             method="post"
           >
-            <input type="hidden" name="_subject" value="New message from your portfolio" />
-            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New message from your portfolio"
+            />
+            <input
+              type="text"
+              name="_gotcha"
+              class="honeypot"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            />
             <div class="form-row">
               <input
                 class="field"
@@ -696,10 +744,12 @@
             note.innerHTML =
               '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><polyline points="8 12.5 11 15.5 16 9.5" /></svg><span>Thanks! Your message was sent.</span>';
           } else {
-            note.textContent = "Something went wrong. Please try again or email me directly.";
+            note.textContent =
+              "Something went wrong. Please try again or email me directly.";
           }
         } catch (error) {
-          note.textContent = "Network error. Please try again or email me directly.";
+          note.textContent =
+            "Network error. Please try again or email me directly.";
         } finally {
           submitBtn.disabled = false;
         }
