@@ -88,12 +88,14 @@
 
     <main class="container">
       <section class="hero">
-        <div class="hero-banner">
-          <div class="hero-code" aria-hidden="true">
-            <span id="typing"></span><span class="cursor"></span>
-          </div>
-          <p>Less talk..</p>
-          <p class="hero-quote">More commits..</p>
+        <div class="hero-banner" id="hero-banner">
+          <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+          <div class="hero-fade" aria-hidden="true"></div>
+          <p class="hero-headline">
+            <span class="sr-only">Less talk.. More commits..</span>
+            <span class="hb-line hb-line-1" aria-hidden="true"><span id="hb-text-1"></span><span class="hb-cursor" id="hb-cursor-1" hidden></span></span>
+            <span class="hb-line hb-line-2" aria-hidden="true"><span id="hb-text-2"></span><span class="hb-cursor" id="hb-cursor-2" hidden></span></span>
+          </p>
         </div>
         <div class="section hero-body">
           <img
@@ -684,21 +686,6 @@
       </div>
     </footer>
     <script>
-      const text = 'const developer = "Farokh";';
-      const element = document.getElementById("typing");
-      let index = 0;
-
-      function type() {
-        if (index < text.length) {
-          element.textContent += text[index];
-          index++;
-          setTimeout(type, 85);
-        }
-      }
-
-      type();
-    </script>
-    <script>
       const emailEl = document.getElementById("contact-email");
       const copyBtn = document.getElementById("copy-email");
       const copyLabel = copyBtn.querySelector("span");
@@ -751,5 +738,6 @@
       });
     </script>
     <script src="nav.js" defer></script>
+    <script src="hero-bg.js" defer></script>
   </body>
 </html>
